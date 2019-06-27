@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        p{
+            padding: 1em;
+            background: green;
+            color: white;
+        }
+
+      </style>
+</head>
+<body>
+    <h1>Pagina usando javascript</h1>
+
+    <script>
+        var peso = parseFloat(prompt("Digite su peso"));
+        var estatura = parseFloat(prompt("Digite su estatura"));
+
+        var imc = peso/(estatura*estatura);
+        var estado="";
+        if (imc<18.5){
+            estado = "bajo peso";
+        }else if (imc<=24.9){
+            estado = "peso normal";
+        }else if (imc<=29.9){
+            estado = "sobrepeso";
+        }else if (imc<=34.9){
+            estado = "obesidad I";
+        }else if (imc<=39.9){
+            estado = "obesidad II";
+        }else if (imc<=49.9){
+            estado = "obesidad III";
+        }else{
+            estado = "obesidad IV";
+        }
+        document.write("<p>Su imc es "+ imc +" y su estado es: "+ estado+"</p>");
+    </script>
+</body>
+</html>

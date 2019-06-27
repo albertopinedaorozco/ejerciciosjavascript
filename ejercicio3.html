@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        p{
+            padding: 1em;
+            background: green;
+            color: white;
+        }
+
+        .miclase{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pagina usando javascript</h1>
+
+    <script>
+       var num = parseInt(prompt("Digite un numero:"));
+        fact=1;
+
+       for(i=1;i<=num;i++){
+           fact=fact*i;           
+       }
+       document.write("<p>El factorial de "+ num +" es "+ fact +"</p>");
+
+    </script>
+</body>
+</html>
